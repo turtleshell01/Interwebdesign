@@ -138,6 +138,7 @@ nav li {
 nav {
    padding: 10px;
    width: 90%;
+   text-align: center;
 }
 
 nav li a {
