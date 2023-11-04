@@ -1,0 +1,17 @@
+body {
+    background-color: blueviolet;
+    color: azure;
+}
+
+    #header_img {
+    background-image: url(../images/minecraft-kitchen.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#header {
+    width: 30%;
+}
+
+
+
