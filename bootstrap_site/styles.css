@@ -1,17 +1,108 @@
 body {
-    background-color: blueviolet;
-    color: azure;
+    background-color: #fadadd;
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    font-family: 'Inknut Antiqua', serif;
 }
 
-    #header_img {
-    background-image: url(../images/minecraft-kitchen.jpg);
-    background-size: cover;
-    background-position: center;
-}
+/* Headings */
 
 #header {
-    width: 30%;
+    width: 60%;
+    border-radius: 4px;
+    border-color: lightgrey;
+    border-style: solid;
+
+}
+
+h1 {
+    color: #7E2852;
+text-decoration: underline;
+text-decoration-style: dashed;
+padding:25px;
+}
+
+h2 {
+    padding: 25px;
+    text-decoration: underline;
+    }
+ 
+    h3 {
+        padding: 25px;
+        text-decoration: underline;   
+    }
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 
 
+footer {
+    text-align: center;
+}
+
+
+.carousel-inner {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+.card {
+margin: auto;
+border-radius: 4px;
+border-style: solid black;
+border-width: 4px;
+}
+
+
+@media (min-width: 768px) {
+    #header {
+        width:80%
+    }
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition-duration: .6s;
+    transition-property: opacity;
+   }
+   
+   .carousel-fade  .carousel-item.active,
+   .carousel-fade  .carousel-item-next.carousel-item-left,
+   .carousel-fade  .carousel-item-prev.carousel-item-right {
+     opacity: 1;
+   }
+   
+   .carousel-fade .active.carousel-item-left,
+   .carousel-fade  .active.carousel-item-right {
+    opacity: 0;
+   }
+   
+   .carousel-fade  .carousel-item-next,
+   .carousel-fade .carousel-item-prev,
+   .carousel-fade .carousel-item.active,
+   .carousel-fade .active.carousel-item-left,
+   .carousel-fade  .active.carousel-item-prev {
+    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+   }
+
+ 
+   /* Navigation */
+   nav {
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+   }
+
+   .nav-link {
+    color: black;
+}

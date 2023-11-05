@@ -6,13 +6,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script><title>Bootstrap</title>
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/peach-crown.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
 
+    <style>
+div {
+  text-align: center;
+}
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24,
+        }
+        </style>
     <title>Menu </title>
 </head>
 <body>
     <div class="container">
-        <nav class="navbar navbar-expand-lg" style="background-color: aliceblue;">
+        <nav class="navbar navbar-expand-lg" style="background-color: white">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -20,16 +38,16 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav me-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Menu</a>
+                    <a class="nav-link" href="menu.html">Menu</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Location and Hours</a>
+                    <a class="nav-link" href="location_hours.html">Location and Hours</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -37,21 +55,77 @@
             </div>
           </nav>
 
+         
+<h2 class="text-center"> Our Menu </h2>
+<hr>
+
     <div class="row">
         <div class="col-lg-4">
-            <h2 class="text-center"> General </h2>
-            <img class="img-fluid my-3 rounded-4" src="images/Minecraft-Picnic-Table-Design.png" alt="Minecraft Picnic Table">
-            <p> Minecraft Picnic Table </p>
+            
+            <img class="img-fluid my-3 rounded-4" src="images/pumpkin-layer-cake.png" alt="Pumpkin Cake">
+            <p class="text-center"> Pumpkin Cake <br> $30 </p>
+
+            <img class="img-fluid my-3 rounded-4" src="images/choc_cake.jpg" alt="Chocolate Cake">
+            <p class="text-center"> Chocolate Delight <br> $30 </p>
+
+            <img class="img-fluid my-3 rounded-4" src="images/strawberryshortcake.jpg" alt="Strawberry Shortcake">
+            <p class="text-center"> Strawberry Shortcake <br> $30 </p>
         </div>
+
         <div class="col-lg-4">
-            <h2 class="text-center"> General </h2>
-            <img class="img-fluid my-3 rounded-4" src="images/Minecraft-Picnic-Table-Design.png" alt="Minecraft Picnic Table">
-            <p> Minecraft Picnic Table </p>
+           
+            <img class="img-fluid my-3 rounded-4" src="images/vanilla-cake-with-buttercream-frosting.png" alt="Vanilla Cake">
+            <p class="text-center"> Vanilla Buttercream (Birthday Version) <br> $40</p>
+
+            <img class="img-fluid my-3 rounded-4" src="images/buttercreamcake.jpg" alt="Vanilla Buttercream Cake">
+            <p class="text-center"> Vanilla Buttercream <br> $40</p>
+
+            <img class="img-fluid my-3 rounded-4" src="images/lemoncake.jpg" alt="Lemon Cake">
+            <p class="text-center"> Lemon Surprise <br> $40</p>
         </div>
+
         <div class="col-lg-4">
-            <h2 class="text-center"> General </h2>
-            <img class="img-fluid my-3 rounded-4" src="images/Minecraft-Picnic-Table-Design.png" alt="Minecraft Picnic Table">
-            <p> Minecraft Picnic Table </p>
+            <img class="img-fluid my-3 rounded-4" src="images/apple-cinnamon-layer-cake.jpg" alt="Cinammon Apple Cake">
+            <p class="text-center"> Cinnamon Apple Cake With Pecans <br> $50 </p>
+
+            <img class="img-fluid my-3 rounded-4" src="images/chocolate_mousse.jpeg" alt="Chocolate Mousse">
+            <p class="text-center"> Chocolate Mousse <br> $50 </p>
+
+            <img class="img-fluid my-3 rounded-4" src="images/redvelvetcake.jpg" alt="Red Velvet">
+            <p class="text-center"> Red Velvet Cake <br> $50 </p>
         </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <span class="material-symbols-outlined">
+                    spa
+                    </span>
+<p class="text-center"> Organically-Grown Ingredients </p>
+            </div>
+<div class="col-lg-4">
+            <span class="material-symbols-outlined">
+                dangerous
+                </span>
+                <p class="text-center"> No Artifical Growth Hormones </p>
+
+                <span class="material-symbols-outlined">
+                    schedule
+                    </span>
+                    <p class="text-center"> On-Time Delivery </p>
+        </div>
+
+        <div class="col-lg-4">
+        <span class="material-symbols-outlined">
+            cake
+            </span>
+            <p class="text-center"> Served Fresh Daily </p>
+            </div>
+            </div>
+
+            <footer>
+                <p> Copyright 2023 Princess Peach and Peach’s Cake Shop. All Rights Reserved. </p>
+             </footer>
 </body>
 </html>
