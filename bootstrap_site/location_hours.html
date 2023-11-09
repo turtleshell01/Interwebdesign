@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="container">
-        <nav class="navbar navbar-expand-lg" style="background-color: white">
+        <nav class="navbar navbar-expand-lg" style="background-color: #FFFFE8">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,28 +40,83 @@
             </div>
           </nav>  
 
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Mushroom Kingdom</button>
+          <div class="row">
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Location 1 
+</button>
 
-<div id="myModal" class="modal fade" role="dialog">
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Mushroom Kingdom</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Some text in the modal.</p>
+        <img class="d-block mx-auto img-fluid" src="images/mushroom-kingdom.jpg" alt="Mushroom Kingdom">
+        <p class="text-center"> 377 Peach Street <br>
+          Mushroom Kingdom 12345</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+  
       </div>
     </div>
-
   </div>
 </div>
 
+
+<button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Location 2 
+</button>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Cheep Cheep Beach </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
+          <div class="modal-body">
+          <img src="images/world-4.png" alt="World 4">
+          <p> 664 Cheep Cheep Beach <br> World 4 22233 </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Location 3 
+    </button>
+    
+    
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Bowser's Castle</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              <img src="images/bowsers-castle.jpg" alt="Bowser's Castle">
+              <p> 1029 Bowser Parkway <br> Bowser's Castle 11122 </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
 
     
           <footer>

@@ -70,8 +70,10 @@ width: 40%;
 
 @media (min-width: 768px) {
     #header {
-        width:80%
+        width:80%;
     }
+
+ 
 }
 
 .carousel-fade .carousel-item {
@@ -99,6 +101,7 @@ width: 40%;
     transform: translateX(0);
     transform: translate3d(0, 0, 0);
    }
+
 
  
    /* Navigation */
