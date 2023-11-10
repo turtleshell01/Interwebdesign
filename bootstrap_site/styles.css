@@ -42,7 +42,10 @@ h2 {
     }
 }
 
-
+.row img {
+    width: 75%;
+    margin:auto;
+}
 
 footer {
     text-align: center;
