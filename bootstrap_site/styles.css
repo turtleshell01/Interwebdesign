@@ -76,7 +76,10 @@ width: 40%;
         width:80%;
     }
 
- 
+    .carousel-inner {
+        width: 50%;
+        margin: auto;
+    }
 }
 
 .carousel-fade .carousel-item {
@@ -117,3 +120,4 @@ width: 40%;
    .nav-link {
     color: black;
 }
+
