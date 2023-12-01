@@ -1,0 +1,108 @@
+/* Background */
+.bg-dark-pink{
+    background-color: #961442;
+}
+/* Menu Buttons */
+.nav-link{
+    color: #fefefe;
+}
+/* Menu Hover */
+.navbar-nav a:hover{
+    color: #EADE8B !important; 
+}
+/* Border removal dropdown menu */
+.no-border-radius .navbar-toggler {
+    border-radius: 0;
+    border: 0;
+}
+/* Navbar Hover */
+.navbar-nav .nav-link {
+    position: relative;
+}
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+}
+/* Navbar Active Effect */
+.navbar-nav .nav-link.active {
+    position: relative;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+}
+.active{
+    color: #EADE8B !important;
+}
+/* Mastheads */
+#masthead {
+    background-image: url(../images/MicrosoftTeams-image.png);
+    background-size: cover;
+    background-position: bottom center;
+    color: #fefefe;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* #masthead-light {
+    background-image: url(../images/MicrosoftTeams-image.png);
+    background-size: cover;
+    background-position: bottom center;
+    height: 800px;
+}
+#masthead-dark{
+    background-image: url(../images/MicrosoftTeams-image.png);
+    background-size: cover;
+    background-position: bottom center;
+    height: 800px;
+} */
+
+
+
+
+/* Content Colors */
+.purple-content{
+    background-color: #7D193E;
+    color: #fefefe;
+}
+.orange-content{
+    background-color: #E76C42;
+    color: #fefefe;
+}
+.yellow-content{
+    background-color: #FDF1D2;
+    color: #000;
+}
+.white-content{
+    background-color: #fefefe;
+    color: #000;
+}
+/* Content Colors */
+/* Examples for how to change button colors */
+.btn-warning{
+    background-color: #E0AA0F !important;
+    border-color: #E0AA0F;
+    color: #002B3B;
+}
+.btn-warning:hover{
+    border-color: #E0AA0F  !important;
+    color: #002B3B;
+}
+.btn-primary{
+    background-color: #002B3B !important;
+    border-color: #002B3B;
+}
+.btn-primary:hover{
+    border-color: #002B3B !important;
+    color: #fefefe;
+}
+.btn-danger{
+    background-color: #E71D2A !important;
+    border-color: #E71D2A;
+    color: #002B3B;
+}
+.btn-danger:hover{
+    border-color: #E71D2A !important;
+    color: #002B3B;
+}
+/* Examples for how to change button colors */
