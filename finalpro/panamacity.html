@@ -44,58 +44,66 @@
     <!-- DON'T TOUCH -->
 
     <body>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-sm bg-dark-pink navbar-dark no-border-radius">
-            <div class="container-fluid">
-                <!-- Clickable Nav Logo Image -->
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/navbar.png" alt="Logo" height="61" class="d-inline-block align-text-top px-3">
-                </a>
-                <!-- Clickable Nav Logo Image -->
-                <!-- Dropdown Menu Function -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Dropdown Menu Function -->
-                <!-- Navabr Menu Items -->
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    <ul class="navbar-nav pe-3">
-                        <!-- Nav Item -->
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">lorem</a>
-                        </li>
-                        <!-- Nav Item -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">lorem</a>
-                        </li>
-                        <!-- Nav Item -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">lorem</a>
-                        </li>
-                        <!-- Nav Item -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">lorem</a>
-                        </li>
-                        <!-- Nav Item -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">lorem</a>
-                        </li>
-                        <!-- Nav Item -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">lorem</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Navabr Menu Items -->
+       <!-- Navbar -->
+ <nav class="animated-element-no-move navbar navbar-expand-lg bg-dark-pink navbar-dark no-border-radius">
+    <div class="container-fluid">
+    <!-- Clickable Nav Logo Image -->
+    <a class="navbar-brand" href="index.html">
+    <img src="images/navbar.png" alt="Logo" height="61" class="d-inline-block align-text-top px-3">
+    </a>
+    <!-- Clickable Nav Logo Image -->
+    <!-- Dropdown Menu Function -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Dropdown Menu Function -->
+    <!-- Navabr Menu Items -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+    <ul class="navbar-nav pe-3">
+    <!-- Nav Item -->
+    <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+    </li>
+    <!-- Nav Item -->
+    <li class="nav-item">
+    <a class="nav-link" href="destin.html">Destin</a>
+    </li>
+    <!-- Nav Item -->
+    <li class="nav-item">
+    <a class="nav-link" href="jacksonville.html">Jacksonville</a>
+    </li>
+    <!-- Nav Item -->
+    <li class="nav-item">
+    <a class="nav-link" href="navarre.html">Navarre</a>
+    </li>
+    <!-- Nav Item -->
+    <li class="nav-item">
+    <a class="nav-link" href="orlando.html">Orlando</a>
+    </li>
+    <!-- Nav Item -->
+    <li class="nav-item">
+    <a class="nav-link" href="panamacity.html">Panama City</a>
+    </li>
+    <!-- Nav Item -->
+    <li class="nav-item">
+    <a class="nav-link" href="pensacola.html">Pensacola</a>
+    </li>
+    <!-- Nav Item -->
+    <li class="nav-item">
+    <a class="nav-link" href="stpetersburg.html">St. Petersburg</a>
+    </li>
+    </ul>
+    </div>
+    <!-- Navabr Menu Items -->
             </div>
         </nav>
         <!-- Navbar -->
 
         <!-- Masthead -->
         <header>
-            <div id="masthead" class="jumbotron object-fit-cover">
+            <div id="masthead" class="animated-element-no-move jumbotron object-fit-cover">
             <div class="overlay">
             <!-- Jumbotron Height. I will adjust this myself as necessary and inform y'all the right height to input before submitting -->
             <div class="position-relative" style="height: 500px;">
@@ -197,7 +205,7 @@
                 <!-- Logo and Links -->
                 <div class="row">
                     <div class="col d-flex flex-column order-sm-1">
-                        <img src="images/MicrosoftTeams-image.png" alt="header" class="img-fluid me-3 mb-3">
+                        <img src="images/navbar.png" alt="header" class="img-fluid me-3 mb-3">
                     </div>
                     <div class="col align-items-end d-flex flex-column order order-sm-2">
                         <a href="#" class="blue-content text-decoration-none mb-2">Terms of Use</a>
@@ -213,8 +221,63 @@
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- Footer -->
+       <!-- Animated Elements -->
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const animatedElements = document.querySelectorAll('.animated-element');
+    
+    const observer = new IntersectionObserver(entries => { 
+    entries.forEach(entry => {
+    if (entry.isIntersecting) {
+    entry.target.classList.add('active');
+    observer.unobserve(entry.target);
+    }
+    });
+    }, { threshold: 0.15 }); // Adjust threshold based on when you want the animation to start
+    
+    animatedElements.forEach(element => {
+    observer.observe(element);
+    });
+    });
+    </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const animatedElements = document.querySelectorAll('.animated-element-no-move');
+    
+    const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+    if (entry.isIntersecting) {
+    entry.target.classList.add('active');
+    observer.unobserve(entry.target);
+    }
+    });
+    }, { threshold: 0.15 }); // Adjust threshold based on when you want the animation to start
+    
+    animatedElements.forEach(element => {
+    observer.observe(element);
+    });
+    });
+    </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const animatedElements = document.querySelectorAll('.animated-element-slow');
+    
+    const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+    if (entry.isIntersecting) {
+    entry.target.classList.add('active');
+    observer.unobserve(entry.target);
+    }
+    });
+    }, { threshold: 0.15 }); // Adjust threshold based on when you want the animation to start
+    
+    animatedElements.forEach(element => {
+    observer.observe(element);
+    });
+    });
+    </script>
+    <!-- Animated Elements -->
+    
     </body>
 
 </html>
